@@ -1,4 +1,10 @@
-function isValidHtml(html) {
+/**
+ * 
+ * @param {string} html 
+ * @returns {boolean}
+ */
+
+const isValidHtml = (html) => {
     const stack = [];
     const pattern = /<\s*\s*(\/?\w+)\s*.*?>/g;
 
