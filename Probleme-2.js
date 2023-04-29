@@ -1,4 +1,11 @@
-let findMaxOrMinExperiences = (experiences, isMostExperienced) => {
+/**
+ * Find max or min experiences in experiences array
+ * 
+ * @param {number[]} experiences 
+ * @param {boolean} isMostExperienced 
+ * @returns {boolean}
+ */
+const findMaxOrMinExperiences = (experiences, isMostExperienced) => {
     if (isMostExperienced) {
         return experiences.map((a, i) => [i, a]).sort((a, b) => a[1] - b[1]).slice(0, 2).map(value => value[0])
     } else {
